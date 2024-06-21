@@ -17,3 +17,5 @@ for (let i = 1; secretNumber != number && i <= Math.floor(Math.log2(n)); i++) {
 	}
 }
 alert("O número secreto era: " + secretNumber);
+
+
