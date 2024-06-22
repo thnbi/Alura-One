@@ -1,22 +1,36 @@
+const possibilities = 10;
+let numbersPlayed = [];
+let guesses = 1;
+let secretNumber = generateSecretNumber();
+
 function initialText() {
 	showText("h1", "Secret Number Game");
-	showText("p", "Chose a number between 1-10");
+	showText("p", `Guess a number between 1 and ${possibilities}`);
 }initialText();
 
 function showText(tag, text) {
 	let field = document.querySelector(tag);
 	field.innerHTML = text;
+	responsiveVoice.speak(text, "UK English Female", {rate:1.2});
 }
 
 function generateSecretNumber() {
-	let randomNumber = Math.floor(Math.random() * 10) + 1;
+	let randomNumber = Math.floor(Math.random() * possibilities) + 1;
+	if(numbersPlayed.length == possibilities) {
+		numbersPlayed = [];
+	}
+	if (numbersPlayed.includes(randomNumber)) {
+		return generateSecretNumber();
+	}
 	console.log("Secret number is: " + randomNumber);
 	return randomNumber;
 }
 
 function newGame() {
 	secretNumber = generateSecretNumber();
+	numbersPlayed.push(secretNumber);
 	guesses = 1;
+	
 	initialText();
 	document.getElementById("reiniciar").setAttribute("disabled", true);
 }
@@ -24,9 +38,6 @@ function newGame() {
 function clearField() {
 	document.querySelector("input").value = "";
 }
-
-let guesses = 1;
-let secretNumber = generateSecretNumber();
 
 function checkGuess() {
 	let guess = document.querySelector("input").value;
