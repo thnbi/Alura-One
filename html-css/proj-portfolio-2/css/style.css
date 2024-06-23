@@ -1,0 +1,137 @@
+:root {
+	--base: #1e1e2e;
+	--text: #cdd6f4;
+	--lavender: #b4befe;
+	--mauve: #cba6f7;
+	--blue: #89b4fa;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito", sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	display: flex;
+	gap: 10rem;
+	background-color: var(--base);
+	color: var(--text);
+}
+
+.cabecalho {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 20rem;
+}
+
+.cabecalho__menu {
+	display: flex;
+	gap: 3rem;
+}
+
+.cabecalho__menu__link{
+	font-family: "Nunito", sans-serif;
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-decoration: none;
+	color: var(--text);
+}
+
+.apresentacao {
+	width: 100%;
+	display: flex;
+	padding: 0 20rem;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.apresentacao__conteudo {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.titulo {
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+
+.titulo .destaque {
+	color: var(--mauve);
+}
+
+.texto {
+ 	font-family: "Nunito", sans-serif;
+}
+
+.apresentacao__links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	justify-content: space-between;
+}
+
+.apresentacao__links .subtitulo {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--lavender);
+}
+
+.apresentacao__links .link {
+	width: 16em;
+	text-align: center;
+	color: var(--text);
+	border: 2px solid var(--lavender);
+	font-size: 1.2rem;
+	font-family: "Nunito", sans;
+	font-weight: 600;
+	padding: 20px 0;
+	border-radius: 14px;
+	text-decoration: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	transition: all 0.3s;
+}
+
+.apresentacao__links .link:hover {
+	background-color: var(--lavender);
+	color: var(--base);
+}
+
+.imagem-de-perfil {
+	width: 35rem;
+	border-radius: 50%;
+}
+
+.rodape {
+	color: var(--base);
+	font-family: "Nunito", sans;
+	font-weight: 600;
+	font-size: 0.8;
+	padding: 0.8rem 0;
+	background-color: var(--lavender);
+	width: 100%;
+	text-align: center;
+}
+
+.social-logo {
+	width: 2rem;
+}

@@ -3,10 +3,16 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<title>Portfolio</title>
 	</head>
 	<body>
+		<header class="cabecalho">
+			<nav class="cabecalho__menu">
+				<a class="cabecalho__menu__link" href="index.html">Home</a>
+				<a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+			</nav>
+		</header>
 		<main class="apresentacao">
 			<section class="apresentacao__conteudo">
 				<h1 class="titulo">
@@ -16,21 +22,45 @@
 					>
 				</h1>
 				<p class="texto">
-					Olá! Sou Renato Freitas, desenvolvedor Back-end com
-					especialidade em C++ e C# .NET. Tenho experiência em
-					manutenção de redes e sistemas de computadores. Desde a
-					infância, minha paixão pela tecnologia tem sido o motor que
-					impulsiona meus sonhos. Atualmente, busco oportunidades
-					desafiadoras onde posso aplicar minha expertise em
-					programação para contribuir de forma significativa para os
-					projetos. Vamos conversar?
+					Olá! Me chamo Hana, Desenvolvedor Back-end com especialidade
+					em C++ e C# .NET. Tenho experiência em manutenção de redes e
+					sistemas de computadores. Desde a infância, minha paixão
+					pela tecnologia tem sido o motor que impulsiona meus sonhos.
+					Atualmente, busco oportunidades desafiadoras onde posso
+					aplicar minha expertise em programação para contribuir de
+					forma significativa para os projetos. Vamos conversar?
 				</p>
 				<div class="apresentacao__links">
-					<a class="link" href="https://www.instagram.com/hanaintherain/">Instagram</a>
-					<a class="link" href="https://www.github.com/thnbi">GitHub</a>
+					<h2 class="subtitulo">Acesse minhas redes:</h2>
+
+					<a class="link" href="https://www.github.com/thnbi"
+						><img
+							class="social-logo"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+							alt="Github"
+						/>GitHub</a
+					>
+					<a
+						class="link"
+						href="https://www.linkedin.com/in/renato-freitas-dev/"
+					>
+						<img
+							class="social-logo"
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
+							alt="Linkedin"
+						/>
+						Linkedin</a
+					>
 				</div>
 			</section>
-			<img src="img/perfil.jpeg" alt="Imagem de perfil" />
+			<img
+				class="imagem-de-perfil"
+				src="img/perfil.jpeg"
+				alt="Imagem de perfil"
+			/>
 		</main>
+		<footer class="rodape">
+			<p class="texto">Desenvolvido por Hana</p>
+		</footer>
 	</body>
 </html>
