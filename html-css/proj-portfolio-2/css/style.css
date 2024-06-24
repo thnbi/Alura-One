@@ -34,7 +34,6 @@ body {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	padding: 1rem 20rem;
 }
 
@@ -52,11 +51,11 @@ body {
 }
 
 .apresentacao {
-	width: 100%;
 	display: flex;
-	padding: 0 20rem;
+	padding: 5% 15%;
 	align-items: center;
 	justify-content: space-between;
+	gap: 82px;
 }
 
 .apresentacao__conteudo {
@@ -76,7 +75,7 @@ body {
 }
 
 .texto {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
  	font-family: var(--font-secondary);
 }
 
@@ -99,7 +98,7 @@ body {
 	text-align: center;
 	color: var(--text);
 	border: 2px solid var(--lavender);
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-family: var(--font-primary);
 	font-weight: 600;
 	padding: 20px 0;
@@ -137,4 +136,24 @@ body {
 .social-logo {
 	width: 2rem;
 	font-size: 1.2rem;
+}
+
+@media (max-width: 1300px) {
+	.cabecalho {
+		justify-content: center;
+		padding: 10%; 	
+	}
+
+	.cabecalho__menu {
+		justify-content: center;
+	}
+
+	.apresentacao {
+		flex-direction: column-reverse;
+		padding: 5% 10%;
+	}
+
+	.apresentacao__conteudo {
+		width: auto;
+	}
 }
